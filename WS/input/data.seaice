@@ -1,0 +1,23 @@
+# SEAICE parameters
+ &SEAICE_PARM01
+    SEAICEwriteState   = .TRUE.,
+#      SEAICE_initialHEFF = 1.0,
+#      SEAICE_deltaTtherm = 1800.,
+#      SEAICE_deltaTdyn   = 1800.,
+#     SEAICEuseDYNAMICS  =.FALSE.,
+#      LSR_ERROR          = 1.E-5,
+#      SEAICE_deltaTevp   = 120.,
+#     SEAICE_tave_mnc    = .FALSE.,
+#     SEAICE_dump_mnc    = .FALSE.,
+#     SEAICE_mon_mnc     = .FALSE.,
+#     ICE2WATR           = 0.92D0,
+#     AreaFile, HeffFile, HsnowFile, HsaltFile,
+  SEAICE_no_slip = .TRUE.,
+  SEAICEuseFlooding = .TRUE.,
+  SEAICEadvSnow = .TRUE.,
+  SEAICE_gamma_t = 259200.,
+  SEAICEadvScheme = 30,
+  diff1 = 0.,
+ &
+ &SEAICE_PARM02
+ &

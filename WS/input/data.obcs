@@ -1,0 +1,64 @@
+# ***************
+# Open boundaries
+# ***************
+ &OBCS_PARM01
+# useOBCSsponge=.FALSE.,
+ useOBCSbalance=.TRUE.,
+#OBCSprintDiags     =.FALSE.,
+# useOBCSYearlyFields=.TRUE.,
+ useOBCSprescribe=.TRUE.,
+ OB_Iwest  = 72*1,
+ OB_Ieast  = 72*128,
+ OB_Jnorth = 128*72,
+#
+ OBEtFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_theta.obce',
+ OBWtFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_theta.obcw',
+ OBNtFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_theta.obcn',
+#
+ OBEsFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_salt.obce',
+ OBWsFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_salt.obcw',
+ OBNsFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_salt.obcn',
+#
+ OBEuFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_uvel.obce',
+ OBWuFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_uvel.obcw',
+ OBNuFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_uvel.obcn',
+#
+ OBEvFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_vvel.obce',
+ OBWvFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_vvel.obcw',
+ OBNvFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_vvel.obcn',
+#
+#
+# all zeros
+ OBWhFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_zero.obcw'
+ OBWaFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_zero.obcw'
+ OBWsnFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_zero.obcw'
+ OBEhFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_zero.obce'
+ OBEaFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_zero.obce'
+ OBEsnFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_zero.obce'
+# this is very counterintuitive: we need to specify
+# an input field for the code to do anything, even
+# though the current CPP Flag settings
+# (OBCS_SEAICE_COMPUTE_UVICE defined), these values
+# have no effect whatsoever
+# OBWuiceFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_zero.obcw'
+# OBWviceFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_zero.obcw'
+# OBEuiceFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_zero.obce'
+# OBEviceFile='/scratch/users/mkimmrit/MITgcm/ECCO1/obcs/ecco_zero.obce'
+ &
+
+
+# *****************************************
+# Sponge Layer Parameters.
+# *****************************************
+&OBCS_PARM03
+# Urelaxobcsinner=777600.E0,
+# Urelaxobcsbound=259200.E0,
+# Vrelaxobcsinner=777600.E0,
+# Vrelaxobcsbound=259200.E0,
+# Urelaxobcsinner=25920.E0,
+# Urelaxobcsbound=8640.E0,
+# Vrelaxobcsinner=25920.E0,
+# Vrelaxobcsbound=8640.E0,
+# spongeThickness=3,
+&
+
