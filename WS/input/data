@@ -120,7 +120,8 @@
 #
  &PARM04
  usingSphericalPolarGrid=.TRUE.,
- delX=128*1.E0,
+#delX=128*1.E0,
+ dxSpacing=1.E0,
 # delY=54*1.0E0,
  delYFile= 'dlat.bin',
  delZ= 10., 10., 15., 20., 20., 25., 35., 50., 75.,
