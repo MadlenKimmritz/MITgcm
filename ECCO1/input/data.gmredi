@@ -1,0 +1,11 @@
+# GMREDI parameters
+&GM_PARM01
+ GM_taper_scheme = 'ldd97',
+# this is what lab_sea/input_ad uses
+# GM_taper_scheme = 'dm95',
+# change some of the defaults according to lab_sea/input_ad
+ GM_background_K = 571.0,
+# GM_Kmin_horiz = 10.,
+ GM_Kmin_horiz = 50.,
+ GM_slopeSqCutoff = 1.D+08,
+ &
